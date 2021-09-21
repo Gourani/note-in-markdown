@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 26% 37% 37%;
+    grid-template-rows: repeat(1,788px);
+    background-color: #3b5a9d;
+}
+.note-editor,.note-preview{
+    background-color:#4fb2aa ;
+    border-left: 1px black solid;
+}
+.selected{
+    background-color: #6db9d5;
+}
+.notes-list{
+    text-align: center;
+    color: #fff;
+}
+.toolbar1{
+    padding: 20px 0;
+}
+.addnote{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height:50px;
+    border: 0.5px #fff solid;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    margin:0 100px;
+    color: white;
+}
+.addnote i{
+    font-size: 20px;
+    margin: 0 15px;
+}
+.addnote:hover{
+   background-color: #fff;
+   transform: scale(0.98);
+   color: black;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    overflow-y: auto;
+    line-height: 1.9;
+    box-shadow: 0px 0px 2px 0px white;
+    margin-top: 50px;
+    padding-top: 1rem;
+
+}
+.scroll div{
+
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.scroll div:hover{
+    background-color:white ;
+    color: black;
+}
+.note-editor{
+    display:flex;
+    flex-direction: column;
+}
+.toolbar2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 60px;
+}
+.toolbar2 input{
+    border: 0;
+    border-bottom: 1px white solid;
+    padding: 2px 5px;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.toolbar2 input{
+    outline: none;
+}
+.toolbar2 .buttons button{
+    margin:0 5px;
+    border: 0.5px #fff solid;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+}
+.toolbar2 .buttons button:hover{
+    transform: scale(0.98);
+}
+textarea{
+    width: 70%;
+    height: 30%;
+    justify-self: center;
+    margin: 20px 85px;
+    background-color: transparent;
+    color: white;
+    resize: none;
+    border: 1px white solid;
+    font-size: 25px;
+    padding: 15px;
+}
+textarea:focus{
+    outline: none;
+}
+.status-bar{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.note-preview{
+    overflow-y: auto;
+}
+.note-preview p{
+    overflow-wrap: break-word;
+    color: white;
+    font-size: 25px;
+    line-height: 1.6;
+    margin:50px 20px;
+    padding: 50px 20px;
+}
+
+@media(max-width:790px){
+ .container{
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
+ }
+ .note-editor , .note-preview{
+     border-left: 0;
+     border-top: 1px black solid;
+ }
+ 
+ .notes-list{
+     height: 400px;
+ }
+    
+}
+@media(min-height:790px){
+    body{
+        overflow-y: hidden;
+    }
+    .notes-list,.container,.note-preview,.note-editor{
+        height: 200rem;
+    }
+    textarea{
+        height:100px;
+    }
+}
