@@ -131,11 +131,8 @@ textarea:focus{
 }
 .note-preview{
     overflow-y: auto;
-    color:white;
-    text-align:center;
-    padding : 20px;
 }
-.note-preview p{
+.content-preview{
     overflow-wrap: break-word;
     color: white;
     font-size: 25px;
