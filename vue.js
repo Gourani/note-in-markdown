@@ -75,11 +75,8 @@ var app=new Vue({
                 const index=this.notes.indexOf(this.selectedNote)
                 if(index!==-1){
                     this.notes.splice(index,1)
-                    if(this.notes[index].id){
-                        this.selectedId=this.notes[index].id
-                    }
-                    else{
-                        this.selectedId=this.notes[index-1].id
+                    if(this.notes[0].id){
+                        this.selectedId=this.notes[0].id
                     }
                 }
             }
