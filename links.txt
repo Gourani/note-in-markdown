@@ -1,0 +1,14 @@
+<!-- Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+--------------------------------------------------------------
+Vue.js
+ <script src="https://unpkg.com/vue/dist/vue.js"></script>
+---------------------------------------------------------------------------
+marked
+<script src="https://unpkg.com/marked"></script>
+-----------------------------------------------------
+moment 
+<script src="https://unpkg.com/moment"></script>
+-----------------------------
+Roboto 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
