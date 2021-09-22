@@ -8,7 +8,7 @@
 .container{
     display: grid;
     grid-template-columns: 26% 37% 37%;
-    grid-template-rows: repeat(1,788px);
+    grid-template-rows: repeat(1,788.9px);
     background-color: #3b5a9d;
 }
 .note-editor,.note-preview{
